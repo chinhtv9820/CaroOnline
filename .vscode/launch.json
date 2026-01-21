@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (Web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/backend/src/Caro.Api/bin/Debug/net8.0/Caro.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/backend/src/Caro.Api",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Python: AI Service",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/python_service/ai_server.py", 
+            "console": "integratedTerminal"
+        }
+    ]
+}
