@@ -1,0 +1,24 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=Caro.db"
+  },
+  "Jwt": {
+    "Issuer": "Caro",
+    "Audience": "CaroClients",
+    "Key": "super_secret_dev_key_change_me_to_production_256bits_minimum_required_here"
+  },
+  "Server": {
+    "Port": "8080"
+  },
+  "Cors": {
+    "AllowedOrigins": []
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
+
